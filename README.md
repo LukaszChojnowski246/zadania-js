@@ -30,7 +30,7 @@ activeListItem.setAttribute("class", "");
 7.const button = document.querySelector("button");
 button.textContent = "PRZYCISK!";
 
-8.?
+8.const activeListItem = document.querySelector('.active'); activeListItem.classList.remove('.active');
 
 9.const newli = document.createElement("li");
 const divek = document.querySelector("ul");
@@ -55,6 +55,48 @@ if (headers.Lenght > 1) {
 
 
 13.
+const obrazek = document.querySelector("img")
+obrazek.dataset.src = "fajny.img"
+obrazek.removeAttribute('src');
+
+14.
+const paragraphs = document.querySelectorAll('p');
+for (let i = 1; i < paragraphs.length; i += 2) {
+  paragraphs[i].style.display = 'none';
+}
+
+15.
+const listItems = document.querySelectorAll('li');
+if (listItems.length >= 3) {
+  const thirdListItem = listItems[2];
+  thirdListItem.classList.add('selected');
+}
+
+16.
+function addElement() {
+  var list = document.querySelector('details ul');
+  var newItem = document.createElement('li');
+  newItem.textContent = 'Nowy element';
+  list.insertBefore(newItem, list.firstChild);
+}
+
+17.
+function removeElements() {
+  var listItems = document.querySelectorAll('details > ul > li');
+  for (var i = 1; i < listItems.length; i += 2) {
+    listItems[i].remove()
+  }
+}
+
+18.
+function addParagraph(tekst) {
+  event.preventDefault();
+  var text = document.querySelector('#newParagraph').value;
+  var newParagraph = document.querySelector('details > section > p');
+  newParagraph.textContent = text;
+  document.querySelector('section').appendChild(newParagraph);
+  document.querySelector('#newParagraph').value = ' '
+  }
 
 
 
