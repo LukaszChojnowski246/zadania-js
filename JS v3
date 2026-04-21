@@ -1,0 +1,26 @@
+1.const wasd = document.querySelector(".header")
+
+2.const nav = document.querySelectorAll("nav > li")
+
+3.const cos = document.querySelector(".delete-trigger")
+
+4.const lol = document.querySelector("#content-area > section ")
+
+5.const olo = document.querySelector("[data-secret]")
+
+6.const link = document.querySelector("a[data-link = 'home']")
+const href = link.getAttribute("href")
+
+
+7.const pol = document.querySelector("#trigger-btn" )
+pol.closest('.level-1').textContent = "volvo"
+
+8.const pol = document.querySelectorAll("tbody > tr" )
+
+9.const img = document.querySelector("figcaption")
+const caption = img.nextElementSibling
+
+
+10.const  lol = document.querySelectorAll("checkbox > legend")
+
+11.
