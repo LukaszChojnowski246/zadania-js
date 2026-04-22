@@ -23,4 +23,20 @@ const caption = img.nextElementSibling
 
 10.const  lol = document.querySelectorAll("checkbox > legend")
 
-11.
+
+
+
+11.const lol = document.querySelector("#username")
+const user = lol.parentElement
+
+
+
+12.const lol = document.querySelectorAll(".notification-wrapper")
+const dzieci = lol.childnodes
+
+
+13.const lol = document.querySelector("h1").textContent
+console.log(lol)
+
+
+14.const lol = document.querySelector("#notification-list").lastElementChild
