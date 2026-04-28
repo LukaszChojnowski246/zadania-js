@@ -125,68 +125,138 @@ const xd4 = document.querySelector(".playground")
 
 xd4.appendChild(xd3)
 
+20.
+const przycisk = document.createElement("button")
+przycisk.textContent = "przycisk"
+const button = document.querySelector(".playground")
+button.append(przycisk)
 
+21.
+const remove = document.querySelectorAll(".removable")
+for (let element of remove ){
+  element.remove()
+}
 
+22.
+const dynamo = document.querySelector("#dynamic-list > li:nth-last-child(1)")
+const lisc = document.querySelector("#dynamic-list")
+lisc.removeChild(dynamo)
 
+23.
+const card = document.querySelector(".card[data-id='1']")
+card.remove()
 
+24.
+const boxy = document.querySelectorAll(".box")
+const wp = document.querySelector("#insertion-container")
+boxy.forEach((elements)=>
+wp.remove(boxy))
 
+25.
+const detale = document.querySelector("details")
+detale.remove()
 
+26.
+const pw = document.querySelectorAll("input")
+pw.forEach(inputs => {
+  console.log(inputs.name)
+})
 
+27.
+const mail = document.querySelector("input[name='email']")
+mail.name = "user-email"
 
+28.
+const light = document.querySelector(".card-highlight")
+light.setAttribute('data-test', 123)
 
+29.
+const menu = document.querySelectorAll(".menu-list li")
+menu.forEach((elementy)=>
+elementy.textContent = "Zmieniono")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+30.
+const kkarta = document.querySelector(".card")
+kkarta.classList.add('processed');
+const data2 = document.querySelector(".card")
+data2(data.status) = "done"
 
 31.
-const xd3 = document.querySelector("#add-item-btn")
-xd3.addEventListener("click", () => {
-const item = document.querySelector("#item input").value
-const li = document.createElement("li")
-li.textContent = item
+const element = document.querySelector("#add_item_bttn")
+element.addEventListener("click", () => {
+  const item_input = document.querySelector("#item-input").value
 
-
-document.querySelector('#dynamic-list').appendChild(li)
-document.querySelector("#item-input").value = ''
+  const li = document.querySelector("li")
+  li.textContent = item_input
+  document.querySelector("#dynamic-list").appendChild(li)
+  document.querySelector("#item-input").value
+ = ' '
 })
 
-
-
-
-32.const xd3 =  document.querySelector('#insert-before-btn')
-
-xd3.addEventListener('click', () => {
-  const box = document.createElement('div')
-  box.classlist.add("box")
-  document.querySelector('#insertion-container')
-  insertion_container.prepend(box)
+32.
+const item_input = document.querySelector("#item-input")
+item_input.addEventListener("input", (event) => {
+  console.log(event.target.value)
 })
 
+33.
+const insert_before_btn = document.querySelector("#insert-before-btn")
+insert_before_btn.addEventListener("click", () => {
+  const box = document.querySelector("div")
+  box.classList.add("box")
+  const insertion_conteiner =  document.querySelector("#insertion-container")
+  insertion_conteiner.prepend(box)
+})
 
+34.
+const add_box_btn = document.querySelector("#add-box-btn")
+add_box_btn.addEventListener("click", () => {
+  const box = document.querySelector(".boxes-container")
+  box.classList.add("box")
+  const insertion_conteiner =  document.querySelector(".boxes-container")
+  insertion_conteiner.prepend(box)
+})
 
+35.
+const removable = document.querySelectorAll(".removable")
 
+for(let element of removable){
+  element.addEventListener("click", (event)=> {
+    event.target.remove();
+  })
+}
+
+36.
+const test_form = document.querySelector("#test-form")
+test_form.addEventListener("sumbit", (event) => {
+    event.preventDefault()
+})
+
+37.
+const select = document.querySelector(".select")
+select.addEventListener("change", (event) => {
+  console.log(event.target.value)
+})
+
+38.
+
+39.
+const cards = document.querySelectorAll(".card")
+for(let card of cards){
+  card.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor = "green"
+  })
+
+  card.addEventListener("mouseout", (event)=>{
+    event.target.style.backgroundColor = "red"
+  })
+}
+
+40.
+const input = document.querySelector("input[name = 'name]")
+
+input.addEventListener("keydown", (event) =>{
+  if(event.key === "Enter") {
+    console.log(event.target.value)
+  }
+})
