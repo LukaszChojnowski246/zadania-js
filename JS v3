@@ -154,4 +154,22 @@ const pop2 = document.querySelector(".level-3, .nest")
 pop2.appendChild(pop)
 
 
-31
+31.const pop = document.querySelector("header > h1")
+pop.style.color = "darkblue"
+
+
+32.const pop = document.querySelector(".admin-only")
+pop.style.displey = "block"
+
+33.const pop = document.querySelector("#main-image")
+pop.setAttribute("src", "papaj.www.pl")
+
+34.const pop = document.querySelectorAll(".notification-item")
+pop.classList.add("highlight")
+
+35.const pop = document.querySelector("#username")
+pop.setAttribute("placeholder", "Podaj imie... ")
+
+36.
+
+
