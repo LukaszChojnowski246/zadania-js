@@ -129,4 +129,29 @@ const pop2 = document.querySelector("#role-select")
 pop2.appendChild(pop)
 
 27.
+const pop = document.createElement("style")
+const pop3 = document.querySelector("body")
+pop3.style.backgroundColor = "lightgrey"
+const pop2 = document.querySelector("head")
+pop2.appendChild(pop)
 
+28.
+const pop = document.createElement("button")
+pop.textContent = "anuluj"
+const pop2 = document.querySelector("#complex-form")
+pop2.appendChild(pop)
+
+29.
+const pop = document.createElement("div")
+pop.textContent = "👍"
+pop.classList.add("alert-box")
+const pop2 = document.querySelector("#data-demo")
+pop2.prepend(pop)
+
+
+30.const pop = document.createElement("mark")
+const pop2 = document.querySelector(".level-3, .nest")
+pop2.appendChild(pop)
+
+
+31
