@@ -170,6 +170,59 @@ pop.classList.add("highlight")
 35.const pop = document.querySelector("#username")
 pop.setAttribute("placeholder", "Podaj imie... ")
 
-36.
+36.const pop = document.querySelector("[data-priority]")
+console.log(pop.dataset.priority)
+
+37.const pop = document.querySelector("time")
+pop.setAttribute("datetime", "29-04-2026")
+
+38.const pop = document.querySelector("#username")
+pop.setAttribute("type", "disable")
+
+39.const pop = document.querySelector("figcaption")
+pop.textContent = "Nowy opis obrazka"
+
+
+40.const pop = document.querySelector("table")
+pop.style.border = "2px solid black";
+
+41.const pop = document.querySelector(".level-3")
+pop.classList.remove("nest")
+
+42.const pop = document.querySelector(".success")
+pop.style.backgroundColor = "green"
+
+43.const pop = document.querySelectorAll("nav > ul > li > a")
+pop.forEach((lin) => {
+  lin.setAttribute("target", "_blank")
+})
+
+44.const pop = document.querySelector("#username")
+pop.setAttribute("value", "Moderator")
+
+45.const pop = document.querySelector(".active")
+const pop2 = document.querySelector("#trigger-btn")
+if (pop2.contains(pop)) {
+  console.log("jest")
+}
+
+46.const pop = document.querySelector("#notification-list")
+const pop2 = document.querySelector(".notification-item")
+pop.removeChild(pop2)
+
+47.const pop = document.querySelector("#semantic-demo")
+const pop2 = pop.childNodes
+pop.remove(pop2)
+
+48.const pop = document.querySelector("tr[data-user-id='102']")
+pop.remove()
+
+49.const pop = document.querySelectorAll(".description")
+pop.forEach((des) => {
+  des.remove
+})
+
+50.const pop = document.querySelector("footer")
+pop.remove
 
 
