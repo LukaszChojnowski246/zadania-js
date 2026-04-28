@@ -73,7 +73,7 @@ function myCreateFunction() {
 
 19.
 const newP = document.createElement("p")
-newP.textContent = 'Uwaga To Papież'
+newP.textContent = 'Uwaga'
 const forms_demo = document.querySelector("#forms-demo")
 forms_demo.prepend(newP)
 
@@ -95,3 +95,31 @@ console.log(p)
 const p2 = p.cloneNode(true);
 const notification_wrapper = document.querySelector(".notification-wrapper")
 notification_wrapper.appendChild(p2)
+
+
+22.
+const span = document.createElement("span")
+span.textContent = ("wymagane")
+const label = document.querySelector(".form-group > label")
+label.appendChild(span)
+
+23.
+
+
+const hr = document.createElement("hr")
+const olo = document.querySelector("#content-area")
+for(const child of olo.children){
+  child.append(hr)
+}
+
+24.
+const inner = document.querySelector("footer > address")
+inner.innerHTML = "https://pl.wikipedia.org/wiki/Lando_(papie%C5%BC)"
+}
+
+
+25.
+
+
+26.
+
